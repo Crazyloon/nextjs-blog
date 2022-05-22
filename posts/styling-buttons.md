@@ -1,8 +1,8 @@
 ---
 title: 'Styling Themed Buttons'
 date: '2022-05-19'
-author: 'russelldow'
+author: 'Crazyloon'
 homepage: '/'
 ---
 
-see [href="Styling-button"]
+See them [Here](/styling-buttons)

@@ -1,4 +1,4 @@
-import Buttons from "../buttons";
+import Buttons from "./buttons";
 
 const stylingbuttons = () => {
   return ( 
