@@ -2,14 +2,18 @@ import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
-import utilStyles from "../../styles/utils.module.css";
+import utilStyles from "../../styles/utils.module.scss";
+import AuthorHeader from "../../components/author-header";
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <>
       <Head>
         <title>{postData.title}</title>
       </Head>
+
+      <AuthorHeader name={postData.author} avatar={postData.author} homepage={postData.homepage} />
+
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
@@ -17,7 +21,7 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </Layout>
+    </>
   );
 }
 

@@ -1,0 +1,245 @@
+:root {
+  --xs: 575px; /* Max container width None (auto) */
+  --sm: 576px; /* Max container width 540px */
+  --md: 768px; /* Max container width 720px */
+  --lg: 992px; /* Max container width 960px */
+  --xl: 1200px; /* Max container width 1140px */
+
+  --gray-100: #e8ebef;
+  --gray-200: #bac3cf;
+  --gray-300: #a3afbf;
+  --gray-400: #8c9aaf;
+  --gray-500: #7586a0;
+  --gray-600: #62738d;
+  --gray-700: #526076;
+  --gray-800: #424d5f;
+  --gray-900: #323b48;
+
+  --white: #F5F5F5;
+  --black: #141517;
+
+  --font-color: var(--black);
+  --background-color: #F0F1EA; // traffic white
+  --background-color-navbar: #5F7695;
+
+  --link-color: #D5A000;
+  --link-color-hover: #08284A;
+  --link-color-active: #AFB2B4;
+  --link-color-visited: #4774ae;
+  
+  --link-text: var(--white);
+
+  --primary: #33448a;
+  --primary-hover: hsl(228, 50%, 40%);
+  --primary-focus: hsl(228, 54%, 43%);
+  --primary-active: hsl(228, 58%, 46%);
+  --primary-after: hsl(228, 46%, 49%);
+  --primary-faded: hsla(228, 46%, 49%, 0.7);
+
+  --primary-dark: hsl(275, 50%, 20%);
+  --primary-dark-hover: hsl(275, 55%, 22%);
+  --primary-dark-focus: hsl(275, 60%, 24%);
+  --primary-dark-active: hsl(275, 75%, 26%);
+
+  --secondary: hsl(211, 80%, 16%);
+  --secondary-hover: hsl(211, 80%, 16%);
+  --secondary-focus: hsl(211, 80%, 16%);
+  --secondary-active: hsl(211, 80%, 16%);
+
+  --secondary-dark: hsl(180, 50%, 18%);
+  --secondary-dark-hover: hsl(180, 53%, 19%);
+  --secondary-dark-focus: hsl(180, 55%, 20%);
+  --secondary-dark-active: hsl(180, 56%, 21%);
+  
+  --accent: hsl(334, 50%, 50%);
+  --accent-hover: hsl(334, 60%, 50%);
+  --accent-focus: hsl(334, 70%, 50%);
+  --accent-active: hsl(334, 80%, 50%);
+
+  --success: hsl(111 40% 30%);
+  --success-hover: hsl(111, 42%, 32%);
+  --success-focus: hsl(111, 44%, 34%);
+  --success-active: hsl(111, 46%, 36%);
+
+  --info: hsl(214, 55%, 58%);
+  --info-hover: hsl(214, 60%, 54%);
+  --info-focus: hsl(214, 65%, 52%);
+  --info-active: hsl(214, 70%, 48%);
+
+  --warning: hsl(28, 65%, 58%);
+  --warning-hover: hsl(28, 70%, 56%);
+  --warning-focus: hsl(28, 75%, 54%);
+  --warning-active: hsl(28, 80%, 52%);
+
+  --error: hsl(0, 74%, 60%);
+  --error-hover: hsl(0, 76%, 58%);
+  --error-focus: hsl(0, 78%, 56%);
+  --error-active: hsl(0, 80%, 54%);
+}
+
+[data-theme='dark'] {
+  --font-color: #e8ebef;
+
+  --background-color: #222831;
+  --background-color-navbar: #393e46;
+  
+  --link-color:  #f2b3ff;
+  --link-color-hover: #b3c2ff;
+  --link-color-active: #AFB2B4;
+  // --link-color-visited: #5F7695;
+  --link-text: var(--font-color);
+  
+  --primary: hsl(277, 31%, 54%);
+  --primary-hover: hsl(277, 52%, 57%);
+  --primary-focus: hsl(277, 60%, 44%);
+  --primary-active: hsl(277, 67%, 40%);
+  --primary-after: hsl(290, 100%, 85%);
+  --primary-faded: hsla(290, 100%, 81%, 0.7);
+  
+  --primary-dark: hsl(275, 50%, 20%);
+  --primary-dark-hover: hsl(275, 55%, 22%);
+  --primary-dark-focus: hsl(275, 60%, 24%);
+  --primary-dark-active: hsl(275, 75%, 26%);
+
+  --secondary: #69809F;
+  --secondary-hover: #748AA6;
+  --secondary-focus: #8094AE;
+  --secondary-active: #5F7695;
+  --secondary-faded: #5F769580;
+
+  --secondary-dark: hsl(180, 50%, 18%);
+  --secondary-dark-hover: hsl(180, 53%, 19%);
+  --secondary-dark-focus: hsl(180, 55%, 20%);
+  --secondary-dark-active: hsl(180, 56%, 21%);
+  
+  --accent: hsl(334, 50%, 50%);
+  --accent-hover: hsl(334, 60%, 50%);
+  --accent-focus: hsl(334, 70%, 50%);
+  --accent-active: hsl(334, 80%, 50%);
+
+  --success: hsl(111 40% 30%);
+  --success-hover: hsl(111, 42%, 32%);
+  --success-focus: hsl(111, 44%, 34%);
+  --success-active: hsl(111, 46%, 36%);
+
+  --info: hsl(214, 55%, 58%);
+  --info-hover: hsl(214, 60%, 54%);
+  --info-focus: hsl(214, 65%, 52%);
+  --info-active: hsl(214, 70%, 48%);
+
+  --warning: hsl(28, 65%, 58%);
+  --warning-hover: hsl(28, 70%, 56%);
+  --warning-focus: hsl(28, 75%, 54%);
+  --warning-active: hsl(28, 80%, 52%);
+
+  --error: hsl(0, 74%, 60%);
+  --error-hover: hsl(0, 76%, 58%);
+  --error-focus: hsl(0, 78%, 56%);
+  --error-active: hsl(0, 80%, 54%);
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+
+  background-color: var(--background-color);
+  color: var(--font-color);
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+small {
+  font-size: 0.7em;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: var(--link-color-active);
+  }
+
+  &:visited {
+    color: var(--link-color-visited);
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+h3, h4, h5, h6 {
+  margin-bottom: 0.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.buttons-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-containers {
+  flex-wrap: wrap;
+}
+
+.button-container {
+  min-width: 300px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  
+  button {
+    margin: 20px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+

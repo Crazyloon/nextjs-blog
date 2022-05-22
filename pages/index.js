@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 import Date from "../components/date";
-
 import { getSortedPostsData } from "../lib/posts";
+import AuthorHeader from "../components/author-header";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -15,25 +15,25 @@ export async function getStaticProps() {
   };
 }
 
+const name = 'Crazyloon';
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
+      <AuthorHeader name={name} avatar={'crazyloon'} home/>
+
       <section className={utilStyles.headingMd}>
         <p>
-          Welcome to the LoonyBlog, where I share stories about my journey into the world of programming
-          and tidbits about my life.
-        </p>
-        <p>
-          (This is a sample website - you can build a site like this with the{" "}
-          <a href="https://nextjs.org/learn">Next.js tutorial</a>.)
+          Welcome to the LoonyBlog, where I share stories about my journey into
+          the world of programming and tidbits about my life.
         </p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Recent Posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -48,6 +48,6 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-    </Layout>
+    </>
   );
 }
