@@ -1,9 +1,7 @@
-import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
-import Date from "../../components/date";
-import utilStyles from "../../styles/utils.module.scss";
 import AuthorHeader from "../../components/author-header";
+import PubInfo from "../../components/pub-info";
 
 export default function Post({ postData }) {
   return (
@@ -15,9 +13,9 @@ export default function Post({ postData }) {
       <AuthorHeader name={postData.author} avatar={postData.author} homepage={postData.homepage} />
 
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
+        <h1 className='text-4xl font-extrabold leading-10 tracking-tighter mt-4 mb-1'>{postData.title}</h1>
+        <div className='text-gray-200 text-sm mb-4'>
+          <PubInfo author={postData.author} date={postData.date} homepage={postData.homepage} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

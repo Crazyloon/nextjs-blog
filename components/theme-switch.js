@@ -1,11 +1,8 @@
 import {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faBoltLightning } from '@fortawesome/free-solid-svg-icons';
-import styles from '../styles/theme-switch.module.scss';
-import navStyles from '../styles/nav-bar.module.scss';
-import classNames from 'classnames';
 
-const ThemeSwitch = () => {
+const ThemeSwitch = ({display}) => {
   const [darkTheme, setDarkTheme] = useState(false);
   const handleThemeToggle = (e) => {
     setDarkTheme(!darkTheme);
@@ -29,10 +26,10 @@ const ThemeSwitch = () => {
   }, []);
 
   return ( 
-    <li onClick={handleThemeToggle} className={styles['theme-switch']}>
-      <div className={ classNames(navStyles['nav-link'])}>
-        <FontAwesomeIcon size={'1x'} icon={faLightbulb} color={darkTheme ? "gray" : "gold"} />
-        <span className={ classNames(navStyles['link-text'], styles['link-text'])}>{ darkTheme ? 'Light Mode' : 'Dark Mode'}</span>
+    <li onClick={handleThemeToggle} className={`float-right text-xl hidden lg:flex hover:bg-secondary-hover cursor-pointer transition-colors m-0 ${display ? 'flex float-none' : ''}`}>
+      <div className='h-9 flex px-3 py-1 items-center'>
+        <FontAwesomeIcon size={'1x'} icon={faLightbulb} color={darkTheme ? "gray" : "gold"} className='w-5 h-5' />
+        <span className={`ml-4 mr-1 text-link-text ${display ? 'inline-block' : 'hidden'}`}>{ darkTheme ? 'Light Mode' : 'Dark Mode'}</span>
       </div>
     </li>
    );

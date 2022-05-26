@@ -1,22 +1,19 @@
-import utilStyles from '../styles/utils.module.scss';
-import styles from '../styles/layout.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const AuthorHeader = ({home, name, avatar, homepage}) => {
   return ( 
-    <header className={styles.header}>
+    <header className='flex flex-col align-center'>
           {home ? (
             <>
               <Image
                 priority
                 src={`/images/${avatar.toLowerCase()}.jpg`}
-                className={utilStyles.borderCircle}
+                className='rounded-full'
                 height={144}
                 width={144}
                 alt={name}
               />
-              <h1 className={utilStyles.heading2Xl}>{name}</h1>
             </>
           ) : (
             <>
@@ -25,18 +22,13 @@ const AuthorHeader = ({home, name, avatar, homepage}) => {
                   <Image
                     priority
                     src={`/images/${avatar.toLowerCase()}.jpg`}
-                    className={utilStyles.borderCircle}
-                    height={108}
-                    width={108}
+                    className='rounded-full'
+                    height={144}
+                    width={144}
                     alt={name}
                   />
                 </a>
               </Link>
-              <h2 className={utilStyles.headingLg}>
-                <Link href={homepage}>
-                  <a className={utilStyles.colorInherit}>{name}</a>
-                </Link>
-              </h2>
             </>
           )}
         </header>

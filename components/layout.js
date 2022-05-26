@@ -1,8 +1,4 @@
 import Head from 'next/head';
-import styles from '../styles/layout.module.scss';
-import btnStyles from '../styles/buttons.module.scss';
-import classNames from 'classnames';
-import Link from 'next/link';
 import NavBar from './nav-bar';
 
 export const siteTitle = 'Loony Blog';
@@ -10,8 +6,8 @@ export const siteTitle = 'Loony Blog';
 export default function Layout({ children, home }) {
   
   return (
-    <main className={styles.main}>
-      <NavBar active={0} onSetActive={(() => {})}  />
+    <main className='h-screen'>
+      <NavBar />
       <Head>          
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Learn how to build a personal website using Next.js" />
@@ -20,7 +16,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <div className={classNames(styles.container)}>
+      <div className='max-w-3xl px-4 mx-auto mb-8'>
         <main>{children}</main>
       </div>
     </main>
