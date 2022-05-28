@@ -1,21 +1,26 @@
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
-import AuthorHeader from "../../components/author-header";
-import PubInfo from "../../components/pub-info";
+import AuthorHeader from "../../components/utilities/author-header";
+import PubInfo from "../../components/utilities/pub-info";
 
 export default function Post({ postData }) {
   return (
     <>
+      <style>
+        {`article.list ul li {
+          list-style-type: disc;
+        }`}
+      </style>
       <Head>
         <title>{postData.title}</title>
       </Head>
 
       <AuthorHeader name={postData.author} avatar={postData.author} homepage={postData.homepage} />
 
-      <article>
+      <article className="list">
         <h1 className='text-4xl font-extrabold leading-10 tracking-tighter mt-4 mb-1'>{postData.title}</h1>
-        <div className='text-gray-200 text-sm mb-4'>
-          <PubInfo author={postData.author} date={postData.date} homepage={postData.homepage} />
+        <div className='text-gray-200 text-thin text-sm mb-4 flex'>
+          <PubInfo author={postData.author} date={postData.date} readTime={postData.readTime} homepage={postData.homepage} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

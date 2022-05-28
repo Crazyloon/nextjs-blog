@@ -1,7 +1,9 @@
+import UnderConstruction from "../components/utilities/under-construction";
+
 const Vlog = () => {
   return ( 
     <>
-      <h1>Under Construction</h1>
+      <UnderConstruction />
     </>
    );
 }

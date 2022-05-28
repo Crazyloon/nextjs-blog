@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import NavBar from './nav-bar';
+import NavBar from '../navigation/nav-bar';
 
 export const siteTitle = 'Loony Blog';
 

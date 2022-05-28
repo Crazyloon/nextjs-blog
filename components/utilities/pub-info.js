@@ -1,7 +1,7 @@
 import Date from './date';
 import Link from 'next/link';
 
-const PubInfo = ({author, date, homepage}) => {
+const PubInfo = ({author, date, readTime, homepage}) => {
   return ( 
     <div>
       <address>
@@ -9,7 +9,9 @@ const PubInfo = ({author, date, homepage}) => {
           <a rel="author">{author}</a>
         </Link>
       </address>
-      <Date dateString={date} />
+      <div className='font-thin'>
+        <Date dateString={date} /> <span className='mx-1'>·</span> <span>{Math.ceil(readTime * .60)} min read</span>
+      </div>
     </div>
    );
 }

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const AuthorHeader = ({home, name, avatar, homepage}) => {
   return ( 
-    <header className='flex flex-col align-center'>
+    <header className='flex align-center justify-center'>
           {home ? (
             <>
               <Image

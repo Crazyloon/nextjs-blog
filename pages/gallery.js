@@ -1,7 +1,9 @@
+import UnderConstruction from "../components/utilities/under-construction";
+
 const PhotoGallery = () => {
   return ( 
     <>
-      <h1>Under Construction</h1>
+      <UnderConstruction />
     </>
    );
 }
