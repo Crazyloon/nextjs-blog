@@ -14,7 +14,7 @@ export async function getStaticProps() {
   };
 }
 
-const name = 'Crazyloon';
+const name = "Crazyloon";
 export default function Home({ allPostsData }) {
   return (
     <>
@@ -22,24 +22,26 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <AuthorHeader name={name} avatar={'crazyloon'} home/>
+      <AuthorHeader name={name} avatar={"crazyloon"} home />
 
       <section className="text-3xl font-extrabold leading[1.2] tracking[-0.05rem] my-[1rem]">
         <p>
-          Welcome to the LoonyBlog! Today, we're messing around with Tailwind CSS,
-          converting all our existing css into Tailwind classes.
+          Welcome to the LoonyBlog! Today, we're writing some blogs about how to
+          build some simple components with React.
         </p>
       </section>
 
-      <section className='leading-6 my-6'>
-        <h2 className='text-2xl leading-5 my-6 text-font-color'>Recent Posts</h2>
-        <ul className='list-none p-0 m-0 inline-flex flex-col'>
+      <section className="leading-6 my-6">
+        <h2 className="text-2xl leading-5 my-6 text-font-color">
+          Recent Posts
+        </h2>
+        <ul className="list-none p-0 m-0 inline-flex flex-col">
           {allPostsData.map(({ id, date, title }) => (
-            <li className='mb-5 inline-flex flex-col' key={id}>
+            <li className="mb-5 inline-flex flex-col" key={id}>
               <Link href={`/posts/${id}`}>
                 <a className="text-lg">{title}</a>
               </Link>
-              <small className='text-blue-100'>
+              <small className="text-secondary">
                 <Date dateString={date} />
               </small>
             </li>

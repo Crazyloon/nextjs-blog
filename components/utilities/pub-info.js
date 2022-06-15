@@ -9,7 +9,7 @@ const PubInfo = ({author, date, readTime, homepage}) => {
           <a rel="author">{author}</a>
         </Link>
       </address>
-      <div className='font-thin'>
+      <div className='font-thin text-font-secondary'>
         <Date dateString={date} /> <span className='mx-1'>·</span> <span>{Math.ceil(readTime * .60)} min read</span>
       </div>
     </div>
