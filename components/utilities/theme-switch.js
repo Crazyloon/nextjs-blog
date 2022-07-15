@@ -1,20 +1,28 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import AchievementContext from "../achievements/achievement-context";
 
 const ThemeSwitch = ({ display }) => {
+  const { achievementsManager } = useContext(AchievementContext);
+
   const [darkTheme, setDarkTheme] = useState(false);
   const handleThemeToggle = (e) => {
     setDarkTheme(!darkTheme);
   };
 
   useEffect(() => {
+    const root = window.document.documentElement;
     if (darkTheme !== undefined && darkTheme) {
       document.documentElement.setAttribute("data-theme", "dark");
       window.localStorage.setItem("theme", "dark");
+      root.classList.add("dark");
+      root.classList.remove("light");
     } else {
       document.documentElement.removeAttribute("data-theme");
       window.localStorage.setItem("theme", "light");
+      root.classList.remove("dark");
+      root.classList.add("light");
     }
   }, [darkTheme]);
 
@@ -28,9 +36,12 @@ const ThemeSwitch = ({ display }) => {
 
   return (
     <li
-      onClick={handleThemeToggle}
-      className={`float-right text-xl hover:bg-secondary-hover cursor-pointer transition-colors m-0 ${
-        display ? "flex float-none" : "lg:flex"
+      onClick={() => {
+        handleThemeToggle();
+        achievementsManager.advanceProgress("redecorate", "toggle");
+      }}
+      className={`text-xl hover:bg-secondary-hover cursor-pointer transition-colors m-0 ${
+        display ? "flex" : "hidden lg:block"
       }`}
     >
       <div className="h-9 flex px-3 py-1 items-center">

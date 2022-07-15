@@ -5,19 +5,10 @@ import Date from "../components/utilities/date";
 import { getSortedPostsData } from "../lib/posts";
 import AuthorHeader from "../components/utilities/author-header";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
 const name = "Crazyloon";
 export default function Home({ allPostsData }) {
   return (
-    <>
+    <section className="mt-8 max-w-5xl m-auto">
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -36,9 +27,9 @@ export default function Home({ allPostsData }) {
           Recent Posts
         </h2>
         <ul className="list-none p-0 m-0 inline-flex flex-col">
-          {allPostsData.map(({ id, date, title }) => (
-            <li className="mb-5 inline-flex flex-col" key={id}>
-              <Link href={`/posts/${id}`}>
+          {allPostsData.map(({ slug, date, title }) => (
+            <li className="mb-5 inline-flex flex-col" key={slug}>
+              <Link href={`/blog/${slug}`}>
                 <a className="text-lg">{title}</a>
               </Link>
               <small className="text-secondary">
@@ -48,6 +39,15 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-    </>
+    </section>
   );
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }

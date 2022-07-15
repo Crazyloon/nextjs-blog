@@ -97,7 +97,7 @@
   /* --link-color-visited: #5F7695;*/
   --link-text: var(--font-primary);
 
-  --shadow: #4444444d;
+  --shadow: #b6b6b64d;
 
   --primary: #8c57ae;
   --primary-hover: #8545ad;
@@ -461,23 +461,58 @@
   }
 }
 
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/Averta-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/Averta-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/Averta-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/Averta-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/Averta-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 900;
+}
+
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Averta", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-size: 18px;
 
   background-color: var(--background-color);
   color: var(--font-primary);
   transition-property: background-color, color;
   transition-duration: 200ms;
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 * {
@@ -514,15 +549,6 @@ img {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--font-primary);
-  font-weight: 700;
-}
 h1,
 h2 {
   margin-bottom: 0.8rem;

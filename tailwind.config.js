@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -6,6 +7,29 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        scalePulse: {
+          "0% 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(160px)", opacity: "0" },
+          "15%": { transform: "translateY(-15px)" },
+          "20%": { transform: "translateY(0px)", opacity: "1" },
+          "80%": { transform: "translateY(0px)" },
+          "85%": { transform: "translateY(15px)", opacity: "1" },
+          "100%": { transform: "translateY(-160px)", opacity: "0" },
+        },
+      },
+      animation: {
+        scalePulse: "scalePulse 1s ease-in-out infinite",
+        fadeIn: "fadeIn 200ms ease-in",
+        slideUp: "slideUp 5s ease-in-out",
+      },
       colors: {
         gray: {
           100: "#e8ebef",

@@ -4,6 +4,7 @@ date: "2022-05-27"
 author: "Russell Dow"
 homepage: "https://www.nandradventures.com"
 tags: ["beginner", "react", "tailwind", "fontawesome"]
+featured: true
 ---
 
 # Introduction
