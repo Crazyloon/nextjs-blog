@@ -5,7 +5,7 @@ import Image from "next/image";
 import { getAllPostSlugs, getPostBySlug } from "../../lib/posts";
 import AuthorHeader from "../../components/utilities/author-header";
 import PubInfo from "../../components/utilities/pub-info";
-import WavyUnderline from "../../components/utilities/decoration-wavy";
+import WavyUnderline from "../../components/utilities/text/wavy-underline";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +21,10 @@ const ResponsiveImage = (props) => (
       {...props}
     />
   </div>
+);
+
+const IndentedParagraph = (props) => (
+  <p className="indent-2">{props.children}</p>
 );
 
 const SmartLink = (props) => {
@@ -39,7 +43,10 @@ const components = {
   img: ResponsiveImage,
   em: WavyUnderline,
   a: SmartLink,
+  // p: IndentedParagraph,
 };
+
+``;
 
 export default function Post(props) {
   const { slug, meta } = props;

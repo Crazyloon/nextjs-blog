@@ -9,6 +9,9 @@ homepage: "/"
 import BasicCard from "../components/cards/basic-card";
 import CardHeading from "../components/cards/card-heading";
 import CardBody from "../components/cards/card-body";
+import CardBodyContent from "../components/cards/card-body-content";
+import Hint from "../components/utilities/text/hint";
+import Heading from "../components/utilities/text/heading";
 
 ![An HTML closing brace with no text](/images/html-logo.jpg)
 
@@ -16,11 +19,11 @@ When you're just getting started with web development, the first thing you'll ne
 
 <BasicCard>
   <CardHeading>
-## **1: Introduction to HTML**
+    <Heading size={2}>1: Introduction to HTML</Heading>
   </CardHeading>
   <CardBody>
-### **Required**
-
+    <Heading size={3}>Required:</Heading>
+    <CardBodyContent>
 _Read these articles_
 
 - MDN: Intro to HTML [Getting Started](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
@@ -30,28 +33,30 @@ _Practice_
 
 - Complete Lessons 1-10 here: [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
 
+</CardBodyContent>
 <hr />
-
-### **Bonus**
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
 
 _Read these articles_
 
 - MDN: Intro to HTML [Hyperlinks](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks)
 - MDN: Intro to HTML [Advanced Text Formatting](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting)
 
+</CardBodyContent>
 </CardBody>
 </BasicCard>
 
 <BasicCard>
   <CardHeading>
-## **2: Structure of HTML**
+    <Heading size={2}>2: Structure of HTML</Heading>
 </CardHeading>
   <CardBody>
-### **Required**
+<Heading size={3}>Required:</Heading>
 
 _Read this article_
 
-- MDN: Into to HTML [Document Structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
+- MDN: Intro to HTML [Document Structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
 
 _Practice_
 
@@ -59,69 +64,176 @@ _Practice_
 
 <hr />
 
-**Bonus**
+<Heading size={3}>Bonus:</Heading>
 
 _Read this articles_
 
-[Debugging HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
+- [Debugging HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
 
 </CardBody>
 </BasicCard>
 
-3: Coding Tools (VSCode recommended)
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>3: Coding Tools</Heading>
+  </CardHeading>
+  <CardBody>
 
-### **Required**
+<Heading size={3}>Required:</Heading>
 
 _Read these articles_
-https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software
-https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files
 
-      	Download a text editor (VSCode recommended)
-      	https://code.visualstudio.com/
+- [Installing Basic Software](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software) [Dealing with Files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files)
 
-Practice
-Complete lessons 21-30 here: https://www.freecodecamp.org/learn/2022/responsive-web-design/
-Bonus Download VSCode - Discover a theme you like and apply it to your editor
-https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs
-4: Write a letter in HTML
-Required Read this article
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter
+_Download a text editor (VSCode recommended)_
 
-    	Practice
+- [Get VSCode](https://code.visualstudio.com/)
 
-Use your code editor to create an HTML file and build the letter at the end of the article here:
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter#example
-Bonus Try Adding your HTML to Code Pen, then share it with someone
-https://codepen.io/
-5: Semantic HTML
-Required Read this article
-https://www.w3schools.com/html/html5_semantic_elements.asp
-Practice
-Complete lessons 31-40 here: https://www.freecodecamp.org/learn/2022/responsive-web-design/
-Bonus Read additional References
-https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements
+_Practice_
 
-6: Intro to accessibility
-Required Read this article
-https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML
-Practice
-Complete lessons 41-50 here: https://www.freecodecamp.org/learn/2022/responsive-web-design/
-Bonus Audit random websites for accessibility
-https://accessibe.com/accessscan
+- Complete lessons 21-30 here: [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
 
-7: Finish your Cat Photo App
-Required Practice
-Complete lessons 51-68 here: https://www.freecodecamp.org/learn/2022/responsive-web-design/
-Copy all of the HTML from the final lesson into a file on your local machine, then view the page in your browser
-Bonus Use a new font
-Visit Google Fonts: https://fonts.google.com/ and pick one or two fonts and figure out how to embed them in your HTML (hint: you can click "Select this style +" when you find one you like, and it will tell you where to copy+paste the required HTML)
+<hr />
 
-Next, research how you can apply a font-family to an HTML element.
+<Heading size={3}>Bonus:</Heading>
 
-8: Write and publish a blog post about everything you've learned over the past week
-Required Choose a blogging site or make a post on social media: Dev.to/Medium/Blogger/Other
-https://dev.to/
-https://medium.com/
-https://www.blogger.com/
-Bonus Tweet about it and share your post
-Use the hashtag #100daysofcode and post a tweet saying you completed your first week into your journey as a web developer. Be sure to link your blog post!
+- If you downloaded VSCode, discover a theme you like and apply it to your editor [VSCode Themes](https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs)
+
+ </CardBody>
+</BasicCard>
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>4: Write a letter in HTML</Heading>
+  </CardHeading>
+
+  <CardBody>
+
+<Heading size={3}>Required:</Heading>
+
+_Read this article_
+
+- [Write a Letter in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter)
+
+_Practice_
+
+- Use your code editor to create an HTML file and build the letter at the end of the article here: [Marking up a letter](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter#example)
+
+<hr />
+
+<Heading size={3}>Bonus:</Heading>
+
+- Try Adding your HTML to Code Pen, then share it with someone [Code Pen](https://codepen.io)
+
+</CardBody>
+
+  </BasicCard>
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>5: Semantic HTML</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Required:</Heading>
+    <CardBodyContent>
+_Read this article_
+
+- W3C: [Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+
+_Practice_
+
+- Complete lessons 31-40 here: [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+
+</CardBodyContent>
+<hr />
+<CardBodyContent>
+  <Heading size={3}>Bonus:</Heading>
+  _Read additional References_
+- MDN: [Semantic Elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements)
+</CardBodyContent>
+</CardBody>
+  </BasicCard>
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>6: Intro to Accessibility</Heading>
+  </CardHeading>
+
+  <CardBody>
+    <Heading size={3}>Required:</Heading>
+    <CardBodyContent>
+    _Read this article_
+    - MDN: [HTML Accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
+    
+    _Practice_
+
+    - Complete lessons 41-50 here: [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+    </CardBodyContent>
+    <hr />
+    <CardBodyContent>
+    <Heading size={3}>Bonus:</Heading>
+
+    _Audit random websites for accessibility_
+    - [AccessiBe Audit](https://accessibe.com/accessscan)
+
+</CardBodyContent>
+  </CardBody>
+</BasicCard>
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>7: Finish Your Cat Photo App</Heading>
+  </CardHeading>
+  <CardBody>
+<Heading size={3}>Required:</Heading>
+<CardBodyContent>
+_Practice_
+
+- Complete lessons 51-68 here: [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+- Copy all of the HTML from the final lesson into a file on your local machine, then view the page in your browser.
+
+</CardBodyContent>
+  <hr />
+<Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+
+_Use a new font_
+
+- Visit [Google Fonts](https://fonts.google.com/) and pick one or two fonts, then research how to embed them in your HTML
+
+<Hint>
+  (Hint: Click "Select this style +" when you find a font you like; it will tell
+  you where to paste the required HTML)
+</Hint>
+
+- Next, research how you can apply a font-family to an HTML element.
+
+</CardBodyContent>
+</CardBody>
+</BasicCard>
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>8: Publish a Blog Post About What You've Learned</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Required:</Heading>
+    <CardBodyContent>
+      _Choose a blogging site or make a post on social media:_
+      
+      - [Dev.to](https://dev.to/)
+      - [Medium](https://medium.com/)
+      - [Blogger](https://www.blogger.com/)
+      - I recommended making an account on Dev.to and making your posts there. Social media works also, but it will be much easier to organize your posts in one place if you use a blogging site.
+
+    </CardBodyContent>
+    <hr />
+    <Heading size={3}>Bonus:</Heading>
+    <CardBodyContent>
+      - Tweet about it and share your post Use the hashtag #100daysofcode and
+      post a tweet saying you completed your first week into your journey as a
+      web developer. Be sure to link your blog post!
+    </CardBodyContent>
+
+  </CardBody>
+</BasicCard>
