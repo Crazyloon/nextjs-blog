@@ -10,6 +10,20 @@ import WavyUnderline from "../../components/utilities/text/wavy-underline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
+const isAbsoluteURL = (urlString) => {
+  try {
+    const url = new URL(urlString);
+
+    if (url.origin !== new URL(document.URL, document.baseURI).origin) {
+      return true;
+    }
+  } catch (error) {
+    new URL(urlString, window.location.origin);
+  }
+
+  return false;
+};
+
 const ResponsiveImage = (props) => (
   <div className="w-full aspect-video">
     <Image
@@ -28,13 +42,15 @@ const IndentedParagraph = (props) => (
 );
 
 const SmartLink = (props) => {
-  const internalDomain =
-    window.location.hostname === new URL(props.href).hostname;
+  const externalDomain = isAbsoluteURL(props.href);
+  const url = externalDomain
+    ? props.href
+    : new URL(props.href, window.location.origin);
 
   return (
-    <a href={props.href} target={internalDomain ? "" : "_blank"}>
+    <a href={props.href} target={!externalDomain ? "" : "_blank"}>
       {props.children}{" "}
-      {!internalDomain && <FontAwesomeIcon icon={faExternalLink} size="xs" />}
+      {externalDomain && <FontAwesomeIcon icon={faExternalLink} size="xs" />}
     </a>
   );
 };

@@ -74,6 +74,7 @@ module.exports = {
         "secondary-hover": "var(--secondary-hover)",
         "secondary-focus": "var(--secondary-focus)",
         "secondary-active": "var(--secondary-active)",
+        "secondary-faded": "var(--secondary-faded)",
 
         "secondary-dark": "var(--secondary-dark)",
         "secondary-dark-hover": "var(--secondary-dark-hover)",
@@ -84,6 +85,7 @@ module.exports = {
         "accent-hover": "var(--accent-hover)",
         "accent-focus": "var(--accent-focus)",
         "accent-active": "var(--accent-active)",
+        "accent-faded": "var(--accent-faded)",
 
         success: "var(--success)",
         "success-hover": "var(--success-hover)",

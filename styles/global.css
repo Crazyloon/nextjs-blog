@@ -52,6 +52,7 @@
   --secondary-hover: hsl(211, 80%, 16%);
   --secondary-focus: hsl(211, 80%, 16%);
   --secondary-active: hsl(211, 80%, 16%);
+  --secondary-faded: hsla(211, 80%, 16%, 0.2);
 
   --secondary-dark: hsl(180, 50%, 18%);
   --secondary-dark-hover: hsl(180, 53%, 19%);
@@ -62,6 +63,7 @@
   --accent-hover: hsl(141, 70%, 28%);
   --accent-focus: hsl(141, 80%, 31%);
   --accent-active: hsl(141, 80%, 34%);
+  --accent-faded: hsl(141, 60%, 25%, 0.2);
 
   --success: hsl(111 40% 30%);
   --success-hover: hsl(111, 42%, 32%);
@@ -111,11 +113,11 @@
   --primary-dark-focus: hsl(275, 60%, 24%);
   --primary-dark-active: hsl(275, 75%, 26%);
 
-  --secondary: #69809f;
-  --secondary-hover: #5e799b;
-  --secondary-focus: #527097;
-  --secondary-active: #486994;
-  --secondary-faded: #48699480;
+  --secondary: hsl(189, 100%, 26%);
+  --secondary-hover: hsl(189, 100%, 26%);
+  --secondary-focus: hsl(189, 100%, 26%);
+  --secondary-active: hsl(189, 100%, 26%);
+  --secondary-faded: hsla(189, 100%, 26%, 0.2);
 
   --secondary-dark: #0a1033;
   --secondary-dark-hover: #0a1438;
@@ -126,6 +128,7 @@
   --accent-hover: hsl(334, 60%, 52%);
   --accent-focus: hsl(334, 70%, 54%);
   --accent-active: hsl(334, 80%, 56%);
+  --accent-faded: hsl(334, 50%, 50%, 0.2);
 
   --success: hsl(111 40% 30%);
   --success-hover: hsl(111, 42%, 32%);

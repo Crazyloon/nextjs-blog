@@ -11,7 +11,7 @@ const NavBrandLink = ({ url, text, icon, active, display }) => {
     >
       <Link href={url} passHref>
         <a className="flex px-3 py-1 items-center text-link-text hover:text-link-text visited:text-link-text hover:no-underline">
-          <FontAwesomeIcon icon={icon} className="w-[20px] h-[20px]" />
+          <FontAwesomeIcon icon={icon} />
           <span className={`ml-3 mr-1 ${display ? "" : "hidden"}`}>{text}</span>
         </a>
       </Link>
