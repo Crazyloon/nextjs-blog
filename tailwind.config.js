@@ -107,6 +107,59 @@ module.exports = {
         "error-focus": "var(--error-focus)",
         "error-active": "var(--error-active)",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "var(--font-primary)",
+            h1: {
+              "margin-top": "0px",
+              "margin-bottom": "0.8rem",
+              color: "inherit",
+            },
+            h2: {
+              "margin-top": "0px",
+              "margin-bottom": "0.8rem",
+              color: "inherit",
+            },
+            h3: {
+              "margin-top": "0px",
+              "margin-bottom": "0.5rem",
+              color: "inherit",
+            },
+            h4: {
+              "margin-bottom": "0.5rem",
+              color: "inherit",
+            },
+            h5: {
+              "margin-bottom": "0.5rem",
+              color: "inherit",
+            },
+            h6: {
+              "margin-bottom": "0.5rem",
+              color: "inherit",
+            },
+            hr: {
+              "margin-top": "2em",
+              "margin-bottom": "1em",
+            },
+            a: {
+              "font-weight": "bold",
+              "text-decoration": "none",
+              color: "var(--link-color)",
+              "&:hover": {
+                color: "var(--link-color-hover)",
+                "text-decoration": "underline",
+              },
+              "&:active": {
+                color: "var(--link-color-active)",
+              },
+              "&:visited": {
+                color: "var(--link-color-visited)",
+              },
+            },
+          },
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

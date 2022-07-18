@@ -75,7 +75,7 @@ const ScrollToTop = () => {
       onClick={scrollToTop}
       onMouseEnter={startBounceAnimation}
       onMouseLeave={stopBounceAnimation}
-      className="rounded-sm fixed inline-block opacity-70 hover:opacity-100 cursor-pointer"
+      className="transition-opacity rounded-sm fixed inline-block opacity-70 hover:opacity-100 cursor-pointer"
     >
       {scrollerVisible && <FontAwesomeIcon icon={faCircleArrowUp} size="2x" />}
     </div>

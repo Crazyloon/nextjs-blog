@@ -124,11 +124,11 @@
   --secondary-dark-focus: #0b193d;
   --secondary-dark-active: #0b1f43;
 
-  --accent: hsl(334, 50%, 50%);
-  --accent-hover: hsl(334, 60%, 52%);
-  --accent-focus: hsl(334, 70%, 54%);
-  --accent-active: hsl(334, 80%, 56%);
-  --accent-faded: hsl(334, 50%, 50%, 0.2);
+  --accent: hsl(320, 50%, 50%);
+  --accent-hover: hsl(320, 60%, 52%);
+  --accent-focus: hsl(320, 70%, 54%);
+  --accent-active: hsl(320, 80%, 56%);
+  --accent-faded: hsl(320, 50%, 50%, 0.2);
 
   --success: hsl(111 40% 30%);
   --success-hover: hsl(111, 42%, 32%);
@@ -567,10 +567,10 @@ h1 {
   font-size: 2rem;
 }
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 h4 {
   font-size: 1rem;

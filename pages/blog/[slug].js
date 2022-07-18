@@ -83,7 +83,7 @@ export default function Post(props) {
           homepage={meta.homepage}
         />
 
-        <article className="article">
+        <article className="article prose dark:prose-invert">
           <h1 className="text-4xl font-extrabold leading-10 tracking-tighter mt-4 mb-1">
             {meta.title}
           </h1>
