@@ -57,7 +57,6 @@ const SmartLink = (props) => {
 
 const components = {
   img: ResponsiveImage,
-  em: WavyUnderline,
   a: SmartLink,
   // p: IndentedParagraph,
 };
