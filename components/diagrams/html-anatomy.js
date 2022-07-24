@@ -5,7 +5,7 @@ const HTMLAnatomy = (props) => {
         <text
           transform="translate(50.275 80.901)"
           style={{
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -51,7 +51,10 @@ const HTMLAnatomy = (props) => {
         </text>
         <text
           transform="translate(50.275 191.398)"
-          style={{ fontFamily: "Lucida Console", fontSize: "12px" }}
+          style={{
+            fontFamily: "Lucida Console, Courier, monospace",
+            fontSize: "12px",
+          }}
         >
           <tspan x="0" y="0" style={{ fill: "#27aae1" }}>
             &lt;
@@ -87,7 +90,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(210.085 81.867)"
           style={{
             fill: "currentcolor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -128,7 +131,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(136.805 9.756)"
           style={{
             fill: "currentColor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -140,7 +143,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(92.386 47.584)"
           style={{
             fill: "currentColor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -152,7 +155,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(324.805 51.478)"
           style={{
             fill: "currentColor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -164,7 +167,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(0 121.046)"
           style={{
             fill: "currentColor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -191,7 +194,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(58.403 139.09)"
           style={{
             fill: "currentColor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -221,7 +224,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(143.346 139.09)"
           style={{
             fill: "currentColor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -251,7 +254,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(258.166 117.146)"
           style={{
             fill: "currentColor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >
@@ -317,7 +320,7 @@ const HTMLAnatomy = (props) => {
           transform="translate(82.869 231.392)"
           style={{
             fill: "currentColor",
-            fontFamily: "Lucida Console",
+            fontFamily: "Lucida Console, Courier, monospace",
             fontSize: "12px",
           }}
         >

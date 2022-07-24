@@ -4,6 +4,7 @@ import { getSortedPostsData, getFeaturedPosts } from "../../lib/posts";
 import Link from "next/link";
 import Date from "../../components/utilities/date";
 import PageLayout from "../../components/layout/content-layout";
+import Circuit from "../../components/patterns/circuit";
 
 const blogHref = (slug) => `/blog/${slug}`;
 
@@ -12,11 +13,9 @@ const PostsPage = ({ allPosts, featuredPosts }) => {
 
   return (
     <>
-      <Banner title={featuredPost.title}>
-        <p className="z-10">{featuredPost.excerpt}</p>
-        <a className="z-10" href={blogHref(featuredPost.slug)}>
-          Read More
-        </a>
+      <Banner title={featuredPost.title} pattern={Circuit}>
+        <p>{featuredPost.excerpt}</p>
+        <a href={blogHref(featuredPost.slug)}>Read More</a>
       </Banner>
       <PageLayout className="leading-6 my-6">
         <h2 className="text-2xl leading-5 my-6 text-font-color">
