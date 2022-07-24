@@ -24,11 +24,22 @@ module.exports = {
           "85%": { transform: "translateY(15px)", opacity: "1" },
           "100%": { transform: "translateY(-160px)", opacity: "0" },
         },
+        bounceRight: {
+          "0%, 100%": {
+            transform: "translateX(0)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateX(25%)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
       },
       animation: {
         scalePulse: "scalePulse 1s ease-in-out infinite",
         fadeIn: "fadeIn 200ms ease-in",
         slideUp: "slideUp 5s ease-in-out",
+        bounceRight: "bounceRight 1s infinite",
       },
       colors: {
         gray: {

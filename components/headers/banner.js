@@ -2,13 +2,13 @@ const Banner = ({ children, title, pattern: Pattern, className }) => {
   return (
     <>
       <header
-        className={`min-h-[24rem] -mx-3 flex flex-col relative border-b-secondary`}
+        className={`relative -mx-3 flex min-h-[24rem] flex-col border-b-secondary`}
       >
         <Pattern />
-        <h1 className="px-3 z-10 md:text-5xl lg:text-7xl font-extrabold leading[1.2] tracking[-0.05rem] mt-24 mx-auto text-center">
+        <h1 className="leading[1.2] tracking[-0.05rem] z-10 mx-auto mt-24 px-3 text-center font-extrabold md:text-5xl lg:text-7xl">
           {title}
         </h1>
-        <div className="px-3 z-10 max-w-3xl text-lg leading[1.2] tracking[-0.05rem] my-16 mx-auto">
+        <div className="leading[1.2] tracking[-0.05rem] z-10 my-16 mx-auto max-w-3xl px-3 text-lg">
           {children}
         </div>
       </header>

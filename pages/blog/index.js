@@ -5,6 +5,9 @@ import Link from "next/link";
 import Date from "../../components/utilities/date";
 import PageLayout from "../../components/layout/content-layout";
 import Circuit from "../../components/patterns/circuit";
+import ArticleLink from "../../components/cards/article-link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 const blogHref = (slug) => `/blog/${slug}`;
 
@@ -15,24 +18,28 @@ const PostsPage = ({ allPosts, featuredPosts }) => {
     <>
       <Banner title={featuredPost.title} pattern={Circuit}>
         <p>{featuredPost.excerpt}</p>
-        <a href={blogHref(featuredPost.slug)}>Read More</a>
+        <a
+          href={blogHref(featuredPost.slug)}
+          className="hover:underline [&>svg]:hover:animate-bounceRight"
+        >
+          Read More
+          <FontAwesomeIcon className="ml-2" icon={faArrowRightLong} />
+        </a>
       </Banner>
-      <PageLayout className="leading-6 my-6">
-        <h2 className="text-2xl leading-5 my-6 text-font-color">
+      <PageLayout className="my-6 leading-6">
+        <h2 className="text-font-color my-6 text-2xl leading-5">
           Recent Posts
         </h2>
-        <ul className="list-none p-0 m-0 inline-flex flex-col">
-          {allPosts.map(({ slug, date, title }) => (
-            <li className="mb-5 inline-flex flex-col" key={slug}>
-              <Link href={blogHref(slug)}>
-                <a className="text-lg">{title}</a>
-              </Link>
-              <small className="text-font-secondary">
-                <Date dateString={date} />
-              </small>
-            </li>
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+          {allPosts.map(({ slug, date, title, excerpt }) => (
+            <ArticleLink
+              slug={slug}
+              date={date}
+              title={title}
+              excerpt={excerpt}
+            />
           ))}
-        </ul>
+        </div>
       </PageLayout>
     </>
   );
