@@ -76,14 +76,14 @@ export default function Post(props) {
         <title>{meta.title}</title>
       </Head>
 
-      <div className="mt-8 max-w-2xl flex flex-col m-auto">
+      <div className="mt-12 max-w-2xl flex flex-col m-auto">
         <AuthorHeader
           name={meta.author}
           avatar={meta.author}
           homepage={meta.homepage}
         />
 
-        <article className="article prose dark:prose-invert">
+        <article className="article prose dark:prose-invert mb-12">
           <h1 className="text-4xl font-extrabold leading-10 tracking-tighter mt-4 mb-1">
             {meta.title}
           </h1>

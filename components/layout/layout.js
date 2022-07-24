@@ -5,7 +5,7 @@ export const siteTitle = "Crazyloon's Blog";
 
 export default function Layout({ children, home }) {
   return (
-    <main className="h-screen">
+    <main className="">
       <NavBar />
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
       </Head>
 
       {/* <div className="max-w-3xl px-4 mx-auto mb-8"> */}
-      <div className="layout max-w-3xl px-3 lg:px-0 mx-auto">{children}</div>
+      <div className="layout mt-9 px-3 mx-auto">{children}</div>
     </main>
   );
 }

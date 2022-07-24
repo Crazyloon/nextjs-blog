@@ -18,7 +18,7 @@ const NavBar = () => {
   const router = useRouter();
 
   return (
-    <nav className={`bg-navbar`}>
+    <nav className={`bg-navbar w-full fixed top-0 z-50`}>
       <div
         className={`max-w-5xl mx-auto ${
           menuOpen ? "" : "flex justify-between"
