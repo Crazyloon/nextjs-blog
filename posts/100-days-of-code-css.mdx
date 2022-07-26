@@ -12,7 +12,10 @@ import CardBody from "../components/cards/card-body";
 import CardBodyContent from "../components/cards/card-body-content";
 import Hint from "../components/utilities/text/hint";
 import Heading from "../components/utilities/text/heading";
+import WavyUnderline from "../components/utilities/text/wavy-underline";
+import Roadmap from "../components/100daysofcode/roadmap";
 import ImageCredit from "../components/utilities/image-credit";
+import YouTube from "../components/embeds/youtube";
 
 <ImageCredit
   alt="Cropped Section of CSS Code from a Screen"
@@ -21,3 +24,118 @@ import ImageCredit from "../components/utilities/image-credit";
   sourceName="Unsplash"
   sourcePageURL="https://unsplash.com/photos/TkZYCXmrKK4"
 />
+
+<Roadmap />
+
+By now, you've made your way through a fair amount of HTML, and you should be able to build a page with some text, media, and hyper-links. But it was mostly just stacked one thing on top of the other without any form of strategic placement, and virtually no color. Enter <acronym title="Cascading Style Sheets">CSS</acronym>. CSS allows you to do amazing things like control the layout of your content, change the color and shape of elements, give them interesting animations and breed character in your pages. CSS is a very powerful tool, but it's also a challenge to learn. According to the <acronym title="World Wide Web Consortium">W3C</acronym> there are over [500 CSS Properties](https://www.w3.org/Style/CSS/all-properties.en.html) 🤯. Truthfully, I don't know if much more than half of those are actually supported in modern browsers, but if you want a big list to look at that shows some examples, I'd start with my favorite resource: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index).
+
+The reality is, once you've learned about the box-model, how to build some standard layouts, add colors, borders, shadows, and some basic animations, you'll be well on your way to building pages with an organized presentation. If CSS deeply satisfies you, the rabbit hole goes a long way down.
+
+{/* ------------------------------------------------ 1 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>1: Introduction to CSS</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Read these articles</WavyUnderline></h4>
+
+- MDN: Intro to CSS [What is it?](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
+- MDN: Intro to CSS [The Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+Complete lessons 1-12 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+
+<h4>
+  <WavyUnderline>Watch this video</WavyUnderline>
+</h4>
+</CardBodyContent>
+
+<YouTube
+  src="https://www.youtube.com/embed/l1mER1bV0N0"
+  title="Learn Every CSS Selector In 20 Minutes"
+/>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 2 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>2: Take a CSS Crash Course</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Follow along with this video</WavyUnderline></h4>
+    </CardBodyContent>
+
+<YouTube
+  src="https://www.youtube.com/embed/yfoY53QXEnI"
+  title="CSS Crash Course For Absolute Beginners"
+/>
+    <CardBodyContent>
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+Complete lessons 13-24 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+Relax, you did a lot today!
+</CardBodyContent>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 3 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>3: Learn the Different Ways to Apply CSS</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Read this Article</WavyUnderline></h4>
+
+- MDN: [How CSS is Structured](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured)
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+Complete lessons 25-36 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4><WavyUnderline>Explore CSS further</WavyUnderline></h4>
+
+This video moves quickly, so don't expect to absorb a bunch of details from it. I recommended when you're first staring out learning anything, that you gloss over a bunch of surface level information quickly so that you can find the things you think are interesting and dive deeper into each of those topics. I liken it to skimming a table of contents and skipping to the first chapter that catches your interest.
+
+</CardBodyContent>
+
+<YouTube
+  src="https://www.youtube.com/embed/Qhaz36TZG5Y"
+  title="10 CSS Pro Tips - Code this, NOT that!"
+/>
+
+</CardBody>
+</BasicCard>

@@ -15,7 +15,7 @@ const ArticleLink = ({ slug, date, title, excerpt }) => {
           <p
             className="mt-4 h-full overflow-hidden text-sm font-normal text-font-primary"
             style={{
-              webkitMaskImage:
+              WebkitMaskImage:
                 "linear-gradient(180deg, #000000 40%, transparent",
             }}
           >

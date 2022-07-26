@@ -46,6 +46,7 @@ export default function Home({ allPostsData }) {
                 date={date}
                 title={title}
                 excerpt={excerpt}
+                key={slug}
               />
             ))}
           </div>
