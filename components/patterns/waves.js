@@ -6,7 +6,7 @@ const Waves = ({
 }) => {
   return (
     <svg
-      className={`fill-[#FFFFFF4D] ${className}`}
+      className={`${className}`}
       style={{ WebkitMaskImage: "linear-gradient(black, transparent)" }}
       viewBox="0 0 1200 120"
       preserveAspectRatio="none"

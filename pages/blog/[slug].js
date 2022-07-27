@@ -63,9 +63,9 @@ const components = {
 };
 
 const WavePattern = (props) => (
-  <div className="absolute -left-96 top-8 flex w-full justify-start lg:left-0">
+  <div className="absolute left-0 top-8 flex h-[18rem] w-full justify-start overflow-hidden  2k:h-[24rem]">
     <Waves
-      className={`absolute flex h-[18rem] w-[2000px] justify-center overflow-auto 2k:h-[24rem] 2k:w-[3000px] 4k:w-[4000px] ${props.className}`}
+      className={`absolute -left-96 flex h-[18rem] w-[2000px] justify-center overflow-auto lg:-left-48 2k:h-[24rem] 2k:w-[3000px] 4k:w-[4000px] ${props.className}`}
     />
   </div>
 );
@@ -84,7 +84,7 @@ export default function Post(props) {
 
       {/* <Banner pattern={WavePattern} title={meta.title} /> */}
       <WavePattern className="fill-secondary dark:fill-secondary" />
-      <h1 className="leading[1.2] tracking[-0.05rem] relative z-10 mx-auto mt-24 text-center font-extrabold text-zinc-800 drop-shadow-2xl dark:text-font-primary md:text-5xl lg:text-7xl">
+      <h1 className="leading[1.2] tracking[-0.05rem] font-shadow relative z-10 mx-auto mt-24 text-center font-extrabold text-zinc-800 drop-shadow-2xl dark:text-font-primary md:text-5xl lg:text-7xl">
         {meta.title}
       </h1>
 
