@@ -5,10 +5,11 @@ import Image from "next/image";
 import { getAllPostSlugs, getPostBySlug } from "../../lib/posts";
 import AuthorHeader from "../../components/utilities/author-header";
 import PubInfo from "../../components/utilities/pub-info";
-import WavyUnderline from "../../components/utilities/text/wavy-underline";
+import Waves from "../../components/patterns/waves";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import Banner from "../../components/headers/banner";
 
 const isAbsoluteURL = (urlString) => {
   try {
@@ -25,7 +26,7 @@ const isAbsoluteURL = (urlString) => {
 };
 
 const ResponsiveImage = (props) => (
-  <div className="w-full aspect-video">
+  <div className="aspect-video w-full">
     <Image
       alt={props.alt}
       width="100%"
@@ -61,7 +62,13 @@ const components = {
   // p: IndentedParagraph,
 };
 
-``;
+const WavePattern = (props) => (
+  <div className="absolute -left-96 top-8 flex w-full justify-start lg:left-0">
+    <Waves
+      className={`absolute flex h-[18rem] w-[2000px] justify-center overflow-auto 2k:h-[24rem] 2k:w-[3000px] 4k:w-[4000px] ${props.className}`}
+    />
+  </div>
+);
 
 export default function Post(props) {
   const { slug, meta } = props;
@@ -75,19 +82,16 @@ export default function Post(props) {
         <title>{meta.title}</title>
       </Head>
 
-      <div className="mt-12 max-w-2xl flex flex-col m-auto">
-        <AuthorHeader
-          name={meta.author}
-          avatar={meta.author}
-          homepage={meta.homepage}
-        />
+      {/* <Banner pattern={WavePattern} title={meta.title} /> */}
+      <WavePattern className="fill-secondary dark:fill-secondary" />
+      <h1 className="leading[1.2] tracking[-0.05rem] relative z-10 mx-auto mt-24 text-center font-extrabold text-zinc-800 drop-shadow-2xl dark:text-font-primary md:text-5xl lg:text-7xl">
+        {meta.title}
+      </h1>
 
-        <article className="article prose dark:prose-invert mb-12">
-          <h1 className="text-4xl font-extrabold leading-10 tracking-tighter mt-4 mb-1">
-            {meta.title}
-          </h1>
+      <div className="relative m-auto mt-12 flex max-w-2xl flex-col">
+        <article className="article prose mb-12 dark:prose-invert">
           {meta.subtitle && <SubTitle subtitle={meta.subtitle} />}
-          <div className="text-gray-200 text-thin text-sm mb-4 flex">
+          <div className="text-thin mb-4 flex text-sm text-gray-200">
             <PubInfo
               author={meta.author}
               date={meta.date}

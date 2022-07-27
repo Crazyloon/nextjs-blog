@@ -171,6 +171,10 @@ module.exports = {
           },
         },
       },
+      screens: {
+        "2k": "1800px",
+        "4k": "3800px",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
