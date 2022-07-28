@@ -6,8 +6,8 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 const ArticleLink = ({ slug, date, title, excerpt }) => {
   return (
     <Link href={`/blog/${slug}`} key={slug}>
-      <a className="[&>*>h3]:hover:underline">
-        <div className="flex h-[14rem] transform cursor-pointer flex-col rounded-md border border-slate-400 border-opacity-20 p-4 shadow-md shadow-shadow backdrop-blur-[1px] transition-all duration-300 hover:-translate-y-1 hover:border-opacity-10 hover:shadow-lg hover:shadow-shadow hover:backdrop-blur-[2px] lg:h-[16rem] [&>span>svg]:hover:animate-bounceRight">
+      <a className="rounded-md shadow-md shadow-shadow backdrop-blur-[1px] transition-all duration-300  hover:-translate-y-1 hover:shadow-lg hover:shadow-shadow hover:backdrop-blur-[2px]">
+        <div className="flex h-[14rem] cursor-pointer flex-col rounded-md border border-slate-400 border-opacity-20 p-4 hover:border-opacity-10 lg:h-[16rem] [&>span>svg]:hover:animate-bounceRight">
           <h3>{title}</h3>
           <small className="text-font-secondary">
             <Date dateString={date} />

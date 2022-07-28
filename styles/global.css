@@ -36,7 +36,8 @@
   --font-primary: #323845;
   --font-secondary: #224366;
   --background-color: #f0f1ea; /* traffic white */
-  --background-color-navbar: #5f7695;
+  /* --background-color-navbar: #5f7695; */
+  --background-color-navbar: #3d5474;
 
   --link-color: #d5a000;
   --link-color-hover: #08284a;

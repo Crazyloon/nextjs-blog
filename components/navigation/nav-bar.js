@@ -18,9 +18,9 @@ const NavBar = () => {
   const router = useRouter();
 
   return (
-    <nav className={`bg-navbar w-full fixed top-0 z-50`}>
+    <nav className={`fixed top-0 z-50 w-full bg-navbar`}>
       <div
-        className={`max-w-5xl mx-auto ${
+        className={`mx-auto max-w-5xl ${
           menuOpen ? "" : "flex justify-between"
         }`}
       >
@@ -32,7 +32,7 @@ const NavBar = () => {
           display={menuOpen}
         />
         <ul
-          className={`m-0 overflow-hidden list-none relative ${
+          className={`relative m-0 list-none overflow-hidden ${
             menuOpen ? "overflow-visible" : ""
           }`}
         >
