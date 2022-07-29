@@ -9,7 +9,7 @@ export default function Layout({ children, home }) {
       <NavBar />
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Web Developers Blog" />
+        <meta name="description" content="A Web Developers Blog" />
         <meta
           name="keywords"
           content="Junior, Developer, Web, Development, React, Tailwind, CSS, HTML, JavaScript, Next.JS, responsive, blog, introduction to web"
@@ -22,11 +22,12 @@ export default function Layout({ children, home }) {
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
         <meta name="og:title" content={siteTitle} />
+        <meta name="og:url" content={"www.russelljdow.com"} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       {/* <div className="max-w-3xl px-4 mx-auto mb-8"> */}
-      <div className="layout mt-9 px-3 mx-auto">{children}</div>
+      <div className="layout mx-auto mt-9 px-3">{children}</div>
     </main>
   );
 }
