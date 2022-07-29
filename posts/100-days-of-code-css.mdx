@@ -4,6 +4,7 @@ subtitle: "Days 9-17: Learning CSS Basics"
 date: "2022-07-16"
 author: "Crazyloon"
 homepage: "/"
+excerpt: "CSS gives you the power to design and organize content in ways you can't with HTML alone. It's a v"
 ---
 
 import BasicCard from "../components/cards/basic-card";
@@ -29,7 +30,7 @@ import YouTube from "../components/embeds/youtube";
 
 By now, you've made your way through a fair amount of HTML, and you should be able to build a page with some text, media, and hyper-links. But it was mostly just stacked one thing on top of the other without any form of strategic placement, and virtually no color. Enter <acronym title="Cascading Style Sheets">CSS</acronym>. CSS allows you to do amazing things like control the layout of your content, change the color and shape of elements, give them interesting animations and breed character in your pages. CSS is a very powerful tool, but it's also a challenge to learn. According to the <acronym title="World Wide Web Consortium">W3C</acronym> there are over [500 CSS Properties](https://www.w3.org/Style/CSS/all-properties.en.html) 🤯. Truthfully, I don't know if much more than half of those are actually supported in modern browsers, but if you want a big list to look at that shows some examples, I'd start with my favorite resource: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index).
 
-The reality is, once you've learned about the box-model, how to build some standard layouts, add colors, borders, shadows, and some basic animations, you'll be well on your way to building pages with an organized presentation. If CSS deeply satisfies you, the rabbit hole goes a long way down.
+The reality is, once you've learned about the box-model, how to build some standard layouts, add colors, borders, shadows, and some basic animations, you'll be well on your way to building pages with an organized presentation. And if CSS deeply satisfies you, the rabbit hole goes a long way down.
 
 {/* ------------------------------------------------ 1 -------------------------------------------------- */}
 
@@ -49,7 +50,7 @@ The reality is, once you've learned about the box-model, how to build some stand
   <WavyUnderline>Practice</WavyUnderline>
 </h4>
 
-Complete lessons 1-12 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+- Complete lessons 1-12 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
 
 </CardBodyContent>
 <hr />
@@ -91,7 +92,7 @@ Complete lessons 1-12 here: [Building a Cafe Menu](https://www.freecodecamp.org/
   <WavyUnderline>Practice</WavyUnderline>
 </h4>
 
-Complete lessons 13-24 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+- Complete lessons 13-24 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
 
 </CardBodyContent>
 <hr />
@@ -112,7 +113,7 @@ Relax, you did a lot today!
   <CardBody>
     <Heading size={3}>Assignment:</Heading>
     <CardBodyContent>
-<h4><WavyUnderline>Read this Article</WavyUnderline></h4>
+<h4><WavyUnderline>Read this article</WavyUnderline></h4>
 
 - MDN: [How CSS is Structured](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured)
 
@@ -120,7 +121,7 @@ Relax, you did a lot today!
   <WavyUnderline>Practice</WavyUnderline>
 </h4>
 
-Complete lessons 25-36 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+- Complete lessons 25-36 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
 
 </CardBodyContent>
 <hr />
@@ -128,13 +129,326 @@ Complete lessons 25-36 here: [Building a Cafe Menu](https://www.freecodecamp.org
 <CardBodyContent>
 <h4><WavyUnderline>Explore CSS further</WavyUnderline></h4>
 
-This video moves quickly, so don't expect to absorb a bunch of details from it. I recommended when you're first staring out learning anything, that you gloss over a bunch of surface level information quickly so that you can find the things you think are interesting and dive deeper into each of those topics. I liken it to skimming a table of contents and skipping to the first chapter that catches your interest.
+- This video moves quickly, so don't expect to absorb a bunch of details from it. I recommended when you're first staring out learning anything, that you gloss over a bunch of surface level information quickly so that you can find the things you think are interesting and dive deeper into each of those topics. I liken it to skimming a table of contents and skipping to the first chapter that catches your interest.
 
 </CardBodyContent>
 
 <YouTube
   src="https://www.youtube.com/embed/Qhaz36TZG5Y"
   title="10 CSS Pro Tips - Code this, NOT that!"
+/>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 4 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>4: The Mechanics of CSS</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Read this article</WavyUnderline></h4>
+
+- MDN: [How CSS Works](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works)
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+- Complete lessons 37-48 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4><WavyUnderline>Learn about browser DevTools</WavyUnderline></h4>
+
+- [Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
+
+</CardBodyContent>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 5 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>5: Learn the Box Model</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Read this article</WavyUnderline></h4>
+
+- MDN: [The Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+- Complete lessons 49-60 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4><WavyUnderline>Watch a video (pick one)</WavyUnderline></h4>
+
+</CardBodyContent>
+
+<YouTube
+  src="https://www.youtube.com/embed/M6coJNLFBWI"
+  title="HTML & CSS for Beginners Part 12: The CSS Box Model - Margin, Borders & Padding explained"
+/>
+
+<YouTube
+  src="https://www.youtube.com/embed/rIO5326FgPE"
+  title="Learn CSS Box Model In 8 Minutes"
+/>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 6 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>6: CSS Organization and Naming Strategies</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Read this article</WavyUnderline></h4>
+
+- MDN: [Organizing CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+- Complete lessons 61-72 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4><WavyUnderline>Read this article</WavyUnderline></h4>
+
+- Creative Bloq: [Naming Methodologies](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies)
+
+</CardBodyContent>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 7 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>7: Explore CSS Libraries</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Read this article</WavyUnderline></h4>
+
+- MDN: [GeekFlare](https://geekflare.com/best-css-frameworks/)
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+- Complete lessons 73-92 here: [Building a Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4><WavyUnderline>Watch a video (pick one)</WavyUnderline></h4>
+
+</CardBodyContent>
+
+<YouTube
+  src="https://www.youtube.com/embed/eow125xV5-c"
+  title="Learn Bootstrap in less than 20 minutes - Responsive Website Tutorial"
+/>
+
+<YouTube
+  src="https://www.youtube.com/embed/4sosXZsdy-s"
+  title="Bootstrap 5 Crash Course | Website Build & Deploy"
+/>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 8 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>8: Learn Flexbox and CSS Grid</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Read these articles</WavyUnderline></h4>
+
+- CSS Tricks: [Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- CSS Tricks: [Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+- Complete lessons 1-21 here: [Build a Photo Gallery](https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-flexbox-by-building-a-photo-gallery/step-1)
+- Complete lessons 1-80 here: [Building a Magazine](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-grid-by-building-a-magazine)
+
+</CardBodyContent>
+
+  <hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4><WavyUnderline>Build something</WavyUnderline></h4>
+- Create a row of colored divs spaced evenly using Flexbox
+- Create a grid of colored divs using gaps between them, and spanning some divs across multiple rows and columns
+
+</CardBodyContent>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 9 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>9: Write an Article</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Publish an article to a blog or social media</WavyUnderline></h4>
+
+- Using the same blogging site you use previously, write an article summarizing what you've learned about CSS so far.
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4><WavyUnderline>Tweet about it and share your post</WavyUnderline></h4>
+
+- Use the hashtag #100daysofcode and post a tweet saying you completed another week of your journey as a web developer. Be sure to link your blog post!
+
+</CardBodyContent>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 10 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>10: CSS Animations</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Read this article</WavyUnderline></h4>
+
+- MDN: [Using CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+
+<h4>
+  <WavyUnderline>Practice</WavyUnderline>
+</h4>
+
+- Complete lessons 1-29 here: [Build a ferris wheel](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-animation-by-building-a-ferris-wheel)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4><WavyUnderline>Read this article</WavyUnderline></h4>
+
+- CSS Tricks: [Animation](https://css-tricks.com/almanac/properties/a/animation/)
+
+<h4>
+  <WavyUnderline>Explore an animation library</WavyUnderline>
+</h4>
+
+- Animate: [Animate.css](https://animate.style/)
+
+</CardBodyContent>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 11 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>11: Animations and Transformations</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Practice</WavyUnderline></h4>
+
+- Complete lessons 1-104 here: [Build a penguin](https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-transforms-by-building-a-penguin/step-104)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4>
+  <WavyUnderline>Explore an animation library</WavyUnderline>
+</h4>
+
+- GreenSock: [GSAP](https://greensock.com/gsap/)
+
+</CardBodyContent>
+
+</CardBody>
+</BasicCard>
+
+{/* ------------------------------------------------ 12 -------------------------------------------------- */}
+
+<BasicCard>
+  <CardHeading>
+    <Heading size={2}>12: Begin a Personal Portfolio Site</Heading>
+  </CardHeading>
+  <CardBody>
+    <Heading size={3}>Assignment:</Heading>
+    <CardBodyContent>
+<h4><WavyUnderline>Practice</WavyUnderline></h4>
+
+- This time you have options. You can choose to either build a portfolio site or submit an entry to Style Stage
+
+  1. Follow the requirements laid out in this exercise: [Build a portfolio](https://www.freecodecamp.org/learn/2022/responsive-web-design/#build-a-personal-portfolio-webpage-project) and use what you've learned so far to start a portfolio site. Don't worry about getting things perfect right away, you can revisit this and touch it up as you learn more and explore new ideas
+
+  2. Submit an entry to Style Stage. Style stage provides you with a pre-defined HTML template that you have to style on your own. You're not allowed to modify the HTML. The point is to see how the same HTML can be laid out and designed in vastly different ways. Check it out here [Style Stage](https://moderncss.dev/announcing-style-stage-a-community-css-showcase/) and browse some of the [Examples](https://stylestage.dev/styles/)
+
+</CardBodyContent>
+<hr />
+    <Heading size={3}>Bonus:</Heading>
+<CardBodyContent>
+<h4>
+  <WavyUnderline>Explore portfolio reviews</WavyUnderline>
+</h4>
+
+- Watch some videos that showcase portfolios by other developers. Gather some ideas for your own.
+
+</CardBodyContent>
+
+<YouTube
+  src="https://www.youtube.com/embed/06uXvfmyVI8"
+  title="Jr. Developer Portfolios REAL EXAMPLES - Are They JOB READY? #grindreel"
+/>
+
+<YouTube
+  src="https://www.youtube.com/embed/xLxm9RP1GbA"
+  title="Do these deserve an interview? (REAL Web Developer Portfolio Reviews) #grindreel"
 />
 
 </CardBody>

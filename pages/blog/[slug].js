@@ -49,7 +49,11 @@ const SmartLink = (props) => {
     : new URL(props.href, window.location.origin);
 
   return (
-    <a href={props.href} target={!externalDomain ? "" : "_blank"}>
+    <a
+      href={props.href}
+      target={!externalDomain ? "" : "_blank"}
+      className="whitespace-nowrap"
+    >
       {props.children}{" "}
       {externalDomain && <FontAwesomeIcon icon={faExternalLink} size="xs" />}
     </a>
@@ -74,7 +78,11 @@ export default function Post(props) {
   const { slug, meta } = props;
 
   const Article = dynamic(import(`/posts/${slug}.mdx`));
-  const SubTitle = ({ subtitle }) => <h3>{subtitle}</h3>;
+  const SubTitle = ({ subtitle }) => (
+    <h3 className="mt-8 text-center font-bold md:text-lg lg:text-2xl xl:text-3xl">
+      {subtitle}
+    </h3>
+  );
 
   return (
     <>
@@ -84,13 +92,13 @@ export default function Post(props) {
 
       {/* <Banner pattern={WavePattern} title={meta.title} /> */}
       <WavePattern className="fill-secondary dark:fill-secondary" />
-      <h1 className="tracking[-0.05rem] relative z-10 mx-auto mt-24 text-center font-extrabold leading-none md:mt-36 md:text-5xl lg:text-6xl xl:mt-48 xl:text-7xl">
+      <h1 className="tracking[-0.05rem] relative z-10 mt-24 text-center font-extrabold leading-none md:mt-36 md:text-5xl lg:text-6xl xl:mt-48 xl:text-7xl">
         {meta.title}
       </h1>
+      {meta.subtitle && <SubTitle subtitle={meta.subtitle} />}
 
       <div className="relative m-auto mt-6 flex max-w-2xl flex-col md:mt-8 lg:mt-10">
         <article className="article prose mb-12 dark:prose-invert">
-          {meta.subtitle && <SubTitle subtitle={meta.subtitle} />}
           <div className="text-thin mb-4 flex text-sm text-gray-200">
             <PubInfo
               author={meta.author}

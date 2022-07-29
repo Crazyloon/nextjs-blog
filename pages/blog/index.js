@@ -36,6 +36,7 @@ const PostsPage = ({ allPosts, featuredPosts }) => {
               date={date}
               title={title}
               excerpt={excerpt}
+              key={slug}
             />
           ))}
         </div>

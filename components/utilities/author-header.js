@@ -10,8 +10,8 @@ const AuthorHeader = ({ home, name, avatar, homepage }) => {
             priority
             src={`/images/${avatar.toLowerCase().trim()}.jpg`}
             className="rounded-full"
-            height={144}
-            width={144}
+            height={225}
+            width={225}
             alt={name}
           />
         </>
