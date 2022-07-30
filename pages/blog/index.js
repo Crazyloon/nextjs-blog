@@ -48,8 +48,8 @@ const PostsPage = ({ allPosts, featuredPosts }) => {
 export default PostsPage;
 
 export async function getStaticProps() {
-  const allPosts = getSortedPostsData();
-  const featuredPosts = getFeaturedPosts();
+  const allPosts = await getSortedPostsData();
+  const featuredPosts = await getFeaturedPosts();
   return {
     props: {
       allPosts,

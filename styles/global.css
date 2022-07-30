@@ -124,15 +124,15 @@
   --primary-dark-active: hsl(275, 75%, 26%);
 
   --secondary: hsl(189, 100%, 26%);
-  --secondary-hover: hsl(189, 100%, 26%);
-  --secondary-focus: hsl(189, 100%, 26%);
-  --secondary-active: hsl(189, 100%, 26%);
-  --secondary-faded: hsla(189, 100%, 26%, 0.2);
+  --secondary-hover: hsl(189, 100%, 28%);
+  --secondary-focus: hsl(189, 90%, 30%);
+  --secondary-active: hsl(189, 80%, 32%);
+  --secondary-faded: hsla(189, 70%, 26%, 0.2);
 
-  --secondary-dark: #0a1033;
-  --secondary-dark-hover: #0a1438;
-  --secondary-dark-focus: #0b193d;
-  --secondary-dark-active: #0b1f43;
+  --secondary-dark: hsl(180, 50%, 18%);
+  --secondary-dark-hover: hsl(180, 53%, 19%);
+  --secondary-dark-focus: hsl(180, 55%, 20%);
+  --secondary-dark-active: hsl(180, 56%, 21%);
 
   --accent: hsl(320, 50%, 50%);
   --accent-hover: hsl(320, 60%, 52%);
@@ -151,14 +151,14 @@
   --info-active: hsl(214, 70%, 48%);
 
   --warning: hsl(28, 65%, 58%);
-  --warning-hover: hsl(28, 70%, 56%);
-  --warning-focus: hsl(28, 75%, 54%);
-  --warning-active: hsl(28, 80%, 52%);
+  --warning-hover: hsl(28, 75%, 56%);
+  --warning-focus: hsl(28, 85%, 54%);
+  --warning-active: hsl(28, 95%, 52%);
 
-  --error: hsl(0, 74%, 60%);
-  --error-hover: hsl(0, 76%, 58%);
-  --error-focus: hsl(0, 78%, 56%);
-  --error-active: hsl(0, 80%, 54%);
+  --error: hsl(0, 75%, 60%);
+  --error-hover: hsl(0, 80%, 55%);
+  --error-focus: hsl(0, 85%, 50%);
+  --error-active: hsl(0, 90%, 45%);
 }
 
 @layer components {
@@ -188,10 +188,12 @@
   .btn-primary-outline {
     background-color: transparent;
     border: 1px solid var(--primary);
+    color: var(--primary);
   }
   .btn-primary-outline:hover {
     cursor: pointer;
     background-color: var(--primary-hover);
+    color: var(--link-text);
   }
   .btn-primary-outline:focus {
     background-color: var(--primary-hover);
@@ -222,10 +224,12 @@
   .btn-primary-dark-outline {
     background-color: transparent;
     border: 1px solid var(--primary-dark);
+    color: var(--primary-dark);
   }
   .btn-primary-dark-outline:hover {
     cursor: pointer;
     background-color: var(--primary-dark-hover);
+    color: var(--link-text);
   }
   .btn-primary-dark-outline:focus {
     background-color: var(--primary-dark-hover);
@@ -256,10 +260,12 @@
   .btn-secondary-outline {
     background-color: transparent;
     border: 1px solid var(--secondary);
+    color: var(--secondary);
   }
   .btn-secondary-outline:hover {
     cursor: pointer;
     background-color: var(--secondary-hover);
+    color: var(--link-text);
   }
   .btn-secondary.outline:focus {
     background-color: var(--secondary-hover);
@@ -290,10 +296,12 @@
   .btn-secondary-dark-outline {
     background-color: transparent;
     border: 1px solid var(--secondary-dark);
+    color: var(--secondary-dark);
   }
   .btn-secondary-dark-outline:hover {
     cursor: pointer;
     background-color: var(--secondary-dark-hover);
+    color: var(--link-text);
   }
   .btn-secondary-dark-outline:focus {
     background-color: var(--secondary-dark-hover);
@@ -324,10 +332,12 @@
   .btn-accent-outline {
     background-color: transparent;
     border: 1px solid var(--accent);
+    color: var(--accent);
   }
   .btn-accent-outline:hover {
     cursor: pointer;
     background-color: var(--accent-hover);
+    color: var(--link-text);
   }
   .btn-accent-outline:focus {
     background-color: var(--accent-hover);
@@ -358,10 +368,12 @@
   .btn-success-outline {
     background-color: transparent;
     border: 1px solid var(--success);
+    color: var(--success);
   }
   .btn-success-outline:hover {
     cursor: pointer;
     background-color: var(--success-hover);
+    color: var(--link-text);
   }
   .btn-success-outline:focus {
     background-color: var(--success-hover);
@@ -392,10 +404,12 @@
   .btn-info-outline {
     background-color: transparent;
     border: 1px solid var(--info);
+    color: var(--info);
   }
   .btn-info-outline:hover {
     cursor: pointer;
     background-color: var(--info-hover);
+    color: var(--link-text);
   }
   .btn-info-outline:focus {
     background-color: var(--info-hover);
@@ -426,10 +440,12 @@
   .btn-warning-outline {
     background-color: transparent;
     border: 1px solid var(--warning);
+    color: var(--warning);
   }
   .btn-warning-outline:hover {
     cursor: pointer;
     background-color: var(--warning-hover);
+    color: var(--link-text);
   }
   .btn-warning-outline:focus {
     background-color: var(--warning-hover);
@@ -460,10 +476,12 @@
   .btn-error-outline {
     background-color: transparent;
     border: 1px solid var(--error);
+    color: var(--error);
   }
   .btn-error-outline:hover {
     cursor: pointer;
     background-color: var(--error-hover);
+    color: var(--link-text);
   }
   .btn-error-outline:focus {
     background-color: var(--error-hover);
